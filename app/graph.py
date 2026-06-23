@@ -11,6 +11,7 @@ from nodes.suggestions import suggestions_node
 from nodes.syntax import syntax_node
 from nodes.review import review_node
 from nodes.testcases import testcase_node
+from nodes.fix_code import fix_code_node
 
 builder = StateGraph(GraphState)
 
@@ -24,6 +25,7 @@ builder.add_node("suggestions",suggestions_node)
 builder.add_node("syntax", syntax_node)
 builder.add_node("review", review_node)
 builder.add_node("test_cases", testcase_node)
+builder.add_node("fix_code",fix_code_node)
 
 builder.set_entry_point("syntax")
 # Edges
