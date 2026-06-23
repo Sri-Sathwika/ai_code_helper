@@ -23,7 +23,7 @@ builder.add_node("language",detect_language_node)
 builder.add_node("suggestions",suggestions_node)
 builder.add_node("syntax", syntax_node)
 builder.add_node("review", review_node)
-builder.add_node("testcases", testcase_node)
+builder.add_node("test_cases", testcase_node)
 
 builder.set_entry_point("syntax")
 # Edges
