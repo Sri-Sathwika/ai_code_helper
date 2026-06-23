@@ -1,6 +1,6 @@
 from langgraph.graph import StateGraph, START, END
 
-from state import CodeState
+from state import GraphState
 
 from nodes.explain import explain_node
 from nodes.debug import debug_node
@@ -12,7 +12,7 @@ from nodes.syntax import syntax_node
 from nodes.review import review_node
 from nodes.testcases import testcase_node
 
-builder = StateGraph(CodeState)
+builder = StateGraph(GraphState)
 
 # Register nodes
 builder.add_node("explain", explain_node)
