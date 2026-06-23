@@ -4,7 +4,7 @@ export async function analyzeCode(
   code: string
 ): Promise<AnalysisResult> {
   const response = await fetch(
-    "http://127.0.0.1:8000/analyze",
+    "https://ai-code-helper-rl6w.onrender.com/analyze",
     {
       method: "POST",
       headers: {
