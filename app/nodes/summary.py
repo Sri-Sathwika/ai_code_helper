@@ -1,7 +1,7 @@
 def summary_node(state):
 
     final = f"""
-Create a final report.
+Final report of the given code:
 
 Syntax:
 {state['syntax_result']}
